@@ -3,16 +3,78 @@
 <p align="center">
 <a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
-
-## About Laravel
-
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
 - [Simple, fast routing engine](https://laravel.com/docs/routing).
 - [Powerful dependency injection container](https://laravel.com/docs/container).
+---
+
+## 📦 Inventaris Laboratorium
+
+Proyek ini adalah aplikasi manajemen inventaris laboratorium berbasis Laravel. Anda dapat menggunakannya untuk mencatat, mengelola, dan memantau aset laboratorium seperti ruangan, kategori, barang, dan log perawatan.
+
+---
+
+## 🚀 Cara Menggunakan
+
+1. **Clone repository ini:**
+	```bash
+	git clone https://github.com/username/intventaris-lab.git
+	cd intventaris-lab
+	```
+2. **Install dependensi PHP dan Node.js:**
+	```bash
+	composer install
+	npm install
+	```
+3. **Salin file environment dan generate key:**
+	```bash
+	cp .env.example .env
+	php artisan key:generate
+	```
+4. **Konfigurasi database** di file `.env` sesuai kebutuhan Anda.
+5. **Jalankan migrasi database:**
+	```bash
+	php artisan migrate
+	```
+6.Jalankan seeder
+```bash
+php artisan db:seed
+```
+
+7. **Jalankan server lokal:**
+	```bash
+	php artisan serve
+	```
+7. **Akses aplikasi** di [http://localhost:8000](http://localhost:8000)
+
+---
+
+## 🤝 Kontribusi
+
+Kontribusi sangat terbuka! Berikut langkah-langkah untuk berkontribusi:
+
+1. Fork repository ini.
+2. Buat branch fitur/bugfix baru (`git checkout -b fitur-anda`).
+3. Commit perubahan Anda (`git commit -m 'Deskripsi perubahan'`).
+4. Push ke branch Anda (`git push origin fitur-anda`).
+5. Buat Pull Request ke branch `main`.
+
+Pastikan kode Anda mengikuti standar Laravel dan sudah dites sebelum mengajukan PR.
+
+---
+
+## 📄 Lisensi
+
+Proyek ini menggunakan lisensi MIT. Silakan gunakan, modifikasi, dan distribusikan sesuai kebutuhan.
+
+---
+
+## 📬 Kontak & Bantuan
+
+Jika ada pertanyaan, silakan buat [issue](https://github.com/username/intventaris-lab/issues) atau hubungi maintainer.
+
+---
+
 - Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
 - Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
 - Database agnostic [schema migrations](https://laravel.com/docs/migrations).
